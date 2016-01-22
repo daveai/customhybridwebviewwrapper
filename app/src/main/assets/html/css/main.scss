@@ -1,0 +1,143 @@
+@import "fonts";
+@import "_config.scss";
+@include register-font('Montserrat-Regular','Montserrat','normal',"ttf");
+@include register-font('Montserrat-Bold','Montserrat','bold',"ttf");
+@include register-font('Proxima Nova Bold','Proxima Nova','bold',"otf");
+html{
+	height: 100%;
+}
+body {
+   background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+._splash {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+div.splash-holder {
+  text-align:center;
+    img.logo {
+    width: 134px;
+    height: 113px;
+  }
+  h3.app-name {
+    @include use-registered-font('Montserrat');
+    color:#ffffff;
+    font-size: 60px;
+    font-weight: bold;
+    text-transform:uppercase;
+  }
+  h4.app-tag {
+    @include use-registered-font('Montserrat');
+    color:#FF8E66;
+    font-size: 28px;
+    font-weight: normal;
+    text-transform:uppercase;
+  }
+}
+._login {
+  margin-top:100px;
+}
+.login-fields {
+  margin-top:170px;
+}
+.choose-language-label {
+  .lang_icon {
+    background: url(../images/lang_icon.svg) no-repeat;
+    width: 34px;
+    height:34px;
+    float:left;  
+    margin-top: 14px;
+    margin-right: 30px;  
+  }
+  label {
+    float: left;
+    @include use-registered-font('Proxima Nova');
+    font-weight:bold;
+    font-size:40px;
+    color:#fff;
+  }
+}
+.btn-continue {
+  background : #FFCE00;
+  border-radius : 70px;
+  -moz-border-radius : 70px;
+  -webkit-border-radius : 70px;
+  width: 100%;
+  height: 139px;
+  border: none;
+  outline: none;
+  margin-top:50px;
+  @include use-registered-font('Montserrat');
+  color:#ffffff;
+  font-size: 46px;
+  font-weight: bold;
+}
+.user_icon {
+  background: url(../images/user_icon.svg) no-repeat;
+  width: 34px;
+  height:34px;
+  float:left;  
+  margin-top: 14px;
+  margin-right: 30px;  
+}
+.lbl-signup {
+  float: left;
+  @include use-registered-font('Proxima Nova');
+  font-weight:bold;
+  font-size:40px;
+  color:#fff;
+}
+.lbl-signup-holder {
+  margin-top:100px;
+}
+.btn-fb-login {
+  background : #4873D3;
+  border-radius : 70px;
+  -moz-border-radius : 70px;
+  -webkit-border-radius : 70px;
+  width: 100%;
+  height: 139px;
+  border: none;
+  outline: none;
+  margin-top:50px;
+  @include use-registered-font('Montserrat');
+  color:#ffffff;
+  font-size: 46px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 70px;
+  span {
+        margin-left: 170px;
+  }
+}
+.btn-g-login {
+  background : #FC4532;
+  border-radius : 70px;
+  -moz-border-radius : 70px;
+  -webkit-border-radius : 70px;
+  width: 100%;
+  height: 139px;
+  border: none;
+  outline: none;
+  margin-top:50px;
+  @include use-registered-font('Montserrat');
+  color:#ffffff;
+  font-size: 46px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 70px;
+  span {
+        margin-left: 100px;
+  }
+}
+
+
+
+

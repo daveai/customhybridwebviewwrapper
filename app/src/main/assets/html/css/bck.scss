@@ -1,0 +1,54 @@
+@import "fonts";
+@import "_config.scss";
+@include register-font('Montserrat-Regular','Montserrat','normal',"ttf");
+@include register-font('Montserrat-Bold','Montserrat','bold',"ttf");
+html{
+	height: 100%;
+}
+//////////////////////////////////////////Splash screen/////////////////////////////////////////////
+body { 
+  background: url(../images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  div.container-fluid {
+  	div.row._splash {
+  		position: absolute;
+  		left: 50%;
+  		top: 50%;
+  		-webkit-transform: translate(-50%, -50%);
+  		transform: translate(-50%, -50%);
+  		div.col-xs-12 {
+  			div.splash-holder {
+  				text-align:center;
+  				img.logo {
+  					width: 134px;
+  					height: 113px;
+  				}
+  				h3.app-name {
+  					@include use-registered-font('Montserrat');
+  					color:#ffffff;
+  					font-size: 60px;
+  					font-weight: bold;
+  					text-transform:uppercase;
+  				}
+  				h4.app-tag {
+  					@include use-registered-font('Montserrat');
+  					color:#FF8E66;
+  					font-size: 28px;
+  					font-weight: normal;
+  					text-transform:uppercase;
+  				}
+  			}
+  		}
+  	}
+  }
+}
+//////////////////////////////////////////Splash screen/////////////////////////////////////////////
+
+//////////////////////////////////////////Login screen/////////////////////////////////////////////
+._login {
+  
+}
+//////////////////////////////////////////Login screen/////////////////////////////////////////////

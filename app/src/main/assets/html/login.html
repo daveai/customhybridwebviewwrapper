@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="dogsUpdate">
+	<head>
+		<meta charset="UTF-8">
+		<meta name='viewport' content='target-densitydpi=device-dpi' />
+		<title>Title of the document</title>
+		<link rel="stylesheet" type="text/css" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/font-awesome-4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+
+		<!-- Directives -->
+
+		<script type="text/javascript" src="shared/searchableDropDown/searchableDropDown.js"></script>
+		<link rel="stylesheet" type="text/css" href="shared/searchableDropDown/views/style.css" />
+
+		<!-- Directives -->
+
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row _login">
+				<div class="col-xs-12">
+					<div class="splash-holder">
+						<img src="images/logo.svg" class="logo" />
+						<h3 class="app-name">Dogs Update</h3>
+						<h4 class="app-tag">Everything about dogs</h4>
+					</div>
+				</div>				
+			</div>				
+		</div>
+		<div class="container">			
+			<div class="row login-fields">
+				<div class="col-xs-12 choose-language-label">
+					<span class="lang_icon"></span><label>Select Language</label>
+				</div>
+			</div>
+			<div class="row searchable-drop-down-holder">
+				<div class="col-xs-12">
+					<div searchable-drop-down></div>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<button class="btn-continue">Continue</button>
+				</div>				
+			</div>
+			<div class="row">
+				<div class="col-xs-12 lbl-signup-holder">
+					<span class="user_icon"></span><label class="lbl-signup">Login or Signup</label>
+				</div>				
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<button class="btn-fb-login"><i class="fa fa-facebook"></i><span>Facebook</span></button>
+				</div>				
+			</div>
+
+			<div class="row">
+				<div class="col-xs-12">
+					<button class="btn-g-login"><i class="fa fa-google-plus"></i><span>Google Plus</span></button>
+				</div>				
+			</div>
+		</div>
+	</body>
+</html>

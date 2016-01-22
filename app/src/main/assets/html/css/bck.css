@@ -1,0 +1,79 @@
+/* _simple-font-url('Chunkfive', 'eot'); */
+/* _full-font-url('Chunkfive', 'woff', 'embedded-opentype', '?#iefix'); */
+/* register-font('Chunkfive'); */
+/*
+prevent faux bold
+http://www.alistapart.com/articles/say-no-to-faux-bold/
+use-registered-font('Chunkfive');
+*/
+/* line 1, _config.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 2, _config.scss */
+.clear {
+  clear: both;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: "normal";
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: "bold";
+}
+
+/* line 5, bck.scss */
+html {
+  height: 100%;
+}
+
+/* line 9, bck.scss */
+body {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 16, bck.scss */
+body div.container-fluid div.row._splash {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+/* line 23, bck.scss */
+body div.container-fluid div.row._splash div.col-xs-12 div.splash-holder {
+  text-align: center;
+}
+/* line 25, bck.scss */
+body div.container-fluid div.row._splash div.col-xs-12 div.splash-holder img.logo {
+  width: 134px;
+  height: 113px;
+}
+/* line 29, bck.scss */
+body div.container-fluid div.row._splash div.col-xs-12 div.splash-holder h3.app-name {
+  font-family: "Montserrat", "Arial,'Helvetica Neue',Helvetica,sans-serif";
+  letter-spacing: 0;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 36, bck.scss */
+body div.container-fluid div.row._splash div.col-xs-12 div.splash-holder h4.app-tag {
+  font-family: "Montserrat", "Arial,'Helvetica Neue',Helvetica,sans-serif";
+  letter-spacing: 0;
+  color: #FF8E66;
+  font-size: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+}

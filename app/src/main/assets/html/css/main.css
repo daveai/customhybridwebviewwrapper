@@ -1,0 +1,207 @@
+/* _simple-font-url('Chunkfive', 'eot'); */
+/* _full-font-url('Chunkfive', 'woff', 'embedded-opentype', '?#iefix'); */
+/* register-font('Chunkfive'); */
+/*
+prevent faux bold
+http://www.alistapart.com/articles/say-no-to-faux-bold/
+use-registered-font('Chunkfive');
+*/
+/* line 1, _config.scss */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 2, _config.scss */
+.clear {
+  clear: both;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.ttf");
+  font-weight: "normal";
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Bold.ttf");
+  font-weight: "bold";
+}
+
+@font-face {
+  font-family: "Proxima Nova";
+  src: url("../fonts/Proxima Nova Bold.otf");
+  font-weight: "bold";
+}
+
+/* line 6, main.scss */
+html {
+  height: 100%;
+}
+
+/* line 9, main.scss */
+body {
+  background: url(../images/bg.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* line 16, main.scss */
+._splash {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+/* line 23, main.scss */
+div.splash-holder {
+  text-align: center;
+}
+/* line 25, main.scss */
+div.splash-holder img.logo {
+  width: 134px;
+  height: 113px;
+}
+/* line 29, main.scss */
+div.splash-holder h3.app-name {
+  font-family: "Montserrat", "Arial,'Helvetica Neue',Helvetica,sans-serif";
+  letter-spacing: 0;
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* line 36, main.scss */
+div.splash-holder h4.app-tag {
+  font-family: "Montserrat", "Arial,'Helvetica Neue',Helvetica,sans-serif";
+  letter-spacing: 0;
+  color: #FF8E66;
+  font-size: 28px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+/* line 44, main.scss */
+._login {
+  margin-top: 100px;
+}
+
+/* line 47, main.scss */
+.login-fields {
+  margin-top: 170px;
+}
+
+/* line 51, main.scss */
+.choose-language-label .lang_icon {
+  background: url(../images/lang_icon.svg) no-repeat;
+  width: 34px;
+  height: 34px;
+  float: left;
+  margin-top: 14px;
+  margin-right: 30px;
+}
+/* line 59, main.scss */
+.choose-language-label label {
+  float: left;
+  font-family: "Proxima Nova", "Arial,'Helvetica Neue',Helvetica,sans-serif";
+  letter-spacing: 0;
+  font-weight: bold;
+  font-size: 40px;
+  color: #fff;
+}
+
+/* line 67, main.scss */
+.btn-continue {
+  background: #FFCE00;
+  border-radius: 70px;
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+  width: 100%;
+  height: 139px;
+  border: none;
+  outline: none;
+  margin-top: 50px;
+  font-family: "Montserrat", "Arial,'Helvetica Neue',Helvetica,sans-serif";
+  letter-spacing: 0;
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: bold;
+}
+
+/* line 82, main.scss */
+.user_icon {
+  background: url(../images/user_icon.svg) no-repeat;
+  width: 34px;
+  height: 34px;
+  float: left;
+  margin-top: 14px;
+  margin-right: 30px;
+}
+
+/* line 90, main.scss */
+.lbl-signup {
+  float: left;
+  font-family: "Proxima Nova", "Arial,'Helvetica Neue',Helvetica,sans-serif";
+  letter-spacing: 0;
+  font-weight: bold;
+  font-size: 40px;
+  color: #fff;
+}
+
+/* line 97, main.scss */
+.lbl-signup-holder {
+  margin-top: 100px;
+}
+
+/* line 100, main.scss */
+.btn-fb-login {
+  background: #4873D3;
+  border-radius: 70px;
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+  width: 100%;
+  height: 139px;
+  border: none;
+  outline: none;
+  margin-top: 50px;
+  font-family: "Montserrat", "Arial,'Helvetica Neue',Helvetica,sans-serif";
+  letter-spacing: 0;
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 70px;
+}
+/* line 116, main.scss */
+.btn-fb-login span {
+  margin-left: 170px;
+}
+
+/* line 120, main.scss */
+.btn-g-login {
+  background: #FC4532;
+  border-radius: 70px;
+  -moz-border-radius: 70px;
+  -webkit-border-radius: 70px;
+  width: 100%;
+  height: 139px;
+  border: none;
+  outline: none;
+  margin-top: 50px;
+  font-family: "Montserrat", "Arial,'Helvetica Neue',Helvetica,sans-serif";
+  letter-spacing: 0;
+  color: #ffffff;
+  font-size: 46px;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 70px;
+}
+/* line 136, main.scss */
+.btn-g-login span {
+  margin-left: 100px;
+}
